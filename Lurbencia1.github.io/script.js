@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('event', 'form_submission', {
                     'event_category': 'Contact',
                     'event_label': 'Contact Form',
-                    'send_to': 'G-53HJ2EC0YZ'
+                    'send_to': 'G-J8K8RDFFYM'
                 });
             }
             
