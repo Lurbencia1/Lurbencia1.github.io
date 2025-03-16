@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gracias por contactar con Lurbencia">
+    <meta name="description" content="Página no encontrada - Lurbencia">
     <meta name="robots" content="noindex, follow">
     
-    <title>Gracias | Lurbencia</title>
+    <title>Página no encontrada | Lurbencia</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,17 +29,8 @@
         gtag('config', 'G-J8K8RDFFYM');
     </script>
     
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "qoqzojei3b");
-    </script>
-    
     <style>
-        .thank-you-section {
+        .error-section {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -49,19 +40,30 @@
             padding: 2rem;
         }
         
-        .thank-you-icon {
+        .error-icon {
             font-size: 5rem;
             color: var(--primary);
             margin-bottom: 2rem;
         }
         
-        .thank-you-title {
+        .error-title {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: var(--primary);
         }
         
-        .thank-you-message {
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        
+        .error-message {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             max-width: 600px;
@@ -94,12 +96,13 @@
     </header>
 
     <main>
-        <section class="thank-you-section">
-            <div class="thank-you-icon">
-                <i class="fas fa-check-circle"></i>
+        <section class="error-section">
+            <div class="error-icon">
+                <i class="fas fa-exclamation-circle"></i>
             </div>
-            <h1 class="thank-you-title">¡Gracias por contactarnos!</h1>
-            <p class="thank-you-message">Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Página no encontrada</h2>
+            <p class="error-message">Lo sentimos, la página que estás buscando no existe o ha sido movida.</p>
             <div class="back-home">
                 <a href="https://lurbencia.com" class="btn btn-primary">Volver al inicio</a>
             </div>
@@ -172,13 +175,13 @@
                     
                     // Cambiar el idioma de la página
                     if (lang === 'en') {
-                        document.querySelector('.thank-you-title').textContent = 'Thank you for contacting us!';
-                        document.querySelector('.thank-you-message').textContent = 'We have received your message and will get back to you as soon as possible.';
+                        document.querySelector('.error-title').textContent = 'Page Not Found';
+                        document.querySelector('.error-message').textContent = 'Sorry, the page you are looking for does not exist or has been moved.';
                         document.querySelector('.back-home').querySelector('a').textContent = 'Back to home';
                         document.querySelector('.footer-bottom p').textContent = '© 2023 Lurbencia. All rights reserved.';
                     } else {
-                        document.querySelector('.thank-you-title').textContent = '¡Gracias por contactarnos!';
-                        document.querySelector('.thank-you-message').textContent = 'Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.';
+                        document.querySelector('.error-title').textContent = 'Página no encontrada';
+                        document.querySelector('.error-message').textContent = 'Lo sentimos, la página que estás buscando no existe o ha sido movida.';
                         document.querySelector('.back-home').querySelector('a').textContent = 'Volver al inicio';
                         document.querySelector('.footer-bottom p').textContent = '© 2023 Lurbencia. Todos los derechos reservados.';
                     }
